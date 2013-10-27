@@ -1,0 +1,95 @@
+@-webkit-keyframes move {
+	0% {
+        position:absolute;
+        top:-50px;
+        left:150px;		
+	}
+	50% {
+        position:absolute;
+        top:100px;
+        left:450px;		
+	}
+	100% {
+        position:absolute;
+        top:250px;
+        left:800px;		
+	}
+}
+
+#animation-demo:hover #petal-01{
+	-webkit-animation-name: move;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;	
+}
+
+
+/*this makes it ease rather than skip - for all of them*/
+#animation-demo div {
+	-webkit-transition:all 2s ease-in-out;
+}
+
+/*this rotates the image 180 degrees*/
+/*#animation-demo:hover #petal-01 {
+	-webkit-transform:rotateZ(180deg);
+}*/
+
+/*this rotates petal 2 90 degrees at the same time...*/
+#animation-demo:hover #petal-02 {
+	-webkit-transform:rotateZ(90deg);
+}
+
+
+#petal-01 {
+    position:absolute;
+    top:-50px;
+    left:150px;
+}
+
+#petal-02 {
+    position:absolute;
+    top:10px;
+    left:320px;
+}
+
+#petal-03 {
+    position:absolute;
+    top:20px;
+    left:380px;
+}
+
+#petal-04 {
+    position:absolute;
+    top:10px;
+    left:310px;
+}
+
+#petal-05 {
+    position:absolute;
+    top:150px;
+    left:420px;
+}
+
+#petal-06 {
+    position:absolute;
+    top:210px;
+    left:370px;
+}
+
+#petal-07 {
+    position:absolute;
+    top:10px;
+    left:-60px;
+}
+
+#petal-08 {
+    position:absolute;
+    top:160px;
+    left:220px;
+}
+
+#petal-09 {
+    position:absolute;
+    top:80px;
+    left:200px;
+}
